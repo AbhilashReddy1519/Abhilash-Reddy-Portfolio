@@ -16,7 +16,7 @@ const Load = () => {
         tl.from(".name-1", {
             scale: 10,
             opacity: 0,
-            duration: 0.5,
+            duration: 0.8,
             filter: "blur(10px)",
             ease: "power4.out",
         })
@@ -25,11 +25,11 @@ const Load = () => {
                 {
                     scale: 10,
                     opacity: 0,
-                    duration: 0.5,
+                    duration: 0.8,
                     filter: "blur(10px)",
                     ease: "power4.out",
                 },
-                "-=0.4"
+                "-=0.6"
             ) // Start slightly before previous ends
             .from(
                 ".name-3",
@@ -37,10 +37,10 @@ const Load = () => {
                     filter: "blur(10px)",
                     scale: 10,
                     opacity: 0,
-                    duration: 0.5,
+                    duration: 0.8,
                     ease: "power4.out",
                 },
-                "-=0.4"
+                "-=0.6"
             )
             .from(
                 ".name-4",
@@ -48,10 +48,10 @@ const Load = () => {
                     filter: "blur(10px)",
                     scale: 10,
                     opacity: 0,
-                    duration: 0.5,
+                    duration: 0.8,
                     ease: "power4.out",
                 },
-                "-=0.4"
+                "-=0.6"
             );
         
 
