@@ -88,3 +88,10 @@
     left: 0;
     background: url("/back.png") no-repeat;
 }
+
+.gif {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

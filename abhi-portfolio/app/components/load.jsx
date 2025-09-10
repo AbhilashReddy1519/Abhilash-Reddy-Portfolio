@@ -76,12 +76,19 @@ const Load = () => {
                 duration: 1.5,
                 ease: "power4.out",
             })
-            .to("#box2", {
-                x: 1000,
-                duration: 1.5,
-                ease: "power4.out"
-            },"<")
-                
+            .to(
+                "#box2",
+                {
+                    x: 1000,
+                    duration: 1.5,
+                    ease: "power4.out",
+                },
+                "<"
+            )
+            .from("#gif", {
+                y: 1000,
+                duration: 1,
+            }, "<");
 
         gsap.from("#image", {
             duration: 1,
@@ -99,6 +106,14 @@ const Load = () => {
                     <h1 className={`${styles.name} name-2`}>Abhilash Reddy</h1>
                     <h1 className={`${styles.name} name-3`}>Abhilash Reddy</h1>
                     <h1 className={`${styles.name} name-4`}>Abhilash Reddy</h1>
+                </div>
+                <div>
+                    <img
+                        id="gif"
+                        src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExd25xaGFsc2E3c2Z4ZGYzcjU4djMwNmFtdjgwZG90b2gwZHh3aHY4ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GRPy8MKag9U1U88hzY/giphy.gif"
+                        alt="hi gif"
+                        className={styles.gif}
+                    />
                 </div>
             </section>
             <div className={styles.screen}>

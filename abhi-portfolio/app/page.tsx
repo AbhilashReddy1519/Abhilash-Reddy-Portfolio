@@ -10,13 +10,13 @@ function Home() {
   useEffect(() => {
     const loader = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 5000);
     return () => clearTimeout(loader);
   }, []);
 
 
 
-  return isLoading || true ? <Load /> : (
+  return isLoading ? <Load /> : (
     <>
       <h1 className="text-2xl text-amber-400">Hello World!</h1>
     </>
