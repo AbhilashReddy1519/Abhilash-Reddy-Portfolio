@@ -53,7 +53,35 @@ const Load = () => {
                 },
                 "-=0.7"
             );
-        
+
+        const tl1 = gsap.timeline();
+        tl1.from("#box1", {
+            delay: 2,
+            x: -1000,
+            duration: 1,
+            ease: "power4.out",
+        })
+            .from(
+                "#box2",
+                {
+                    x: 1000,
+                    duration: 1,
+                    ease: "power4.out",
+                },
+                "<"
+            )
+            .to("#box1", {
+                delay: 0.2,
+                x: -1000,
+                duration: 1.5,
+                ease: "power4.out",
+            })
+            .to("#box2", {
+                x: 1000,
+                duration: 1.5,
+                ease: "power4.out"
+            },"<")
+                
 
         gsap.from("#image", {
             duration: 1,
@@ -73,6 +101,10 @@ const Load = () => {
                     <h1 className={`${styles.name} name-4`}>Abhilash Reddy</h1>
                 </div>
             </section>
+            <div className={styles.screen}>
+                <div id="box1" className={styles.box1}></div>
+                <div id="box2" className={styles.box2}></div>
+            </div>
         </>
     );
 };

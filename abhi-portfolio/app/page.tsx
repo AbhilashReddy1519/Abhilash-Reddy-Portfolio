@@ -16,7 +16,7 @@ function Home() {
 
 
 
-  return isLoading ? <Load /> : (
+  return isLoading || true ? <Load /> : (
     <>
       <h1 className="text-2xl text-amber-400">Hello World!</h1>
     </>

@@ -6,6 +6,31 @@
     font-display: swap;
 }
 
+.screen {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    /* z-index: -1; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: none;
+}
+
+.box1 {
+    /* border: 10px solid black; */
+    background: url("/back.png");
+    border-right: 10px double white;
+}
+
+.box2 {
+    /* border: 10px solid black; */
+    background: url("/back.png");
+    border-left: 10px double white;
+}
+
 .name {
     font-family: "magic-delight", sans-serif;
     font-size: 10rem;
