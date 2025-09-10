@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "magic-delight";
+    src: url("/fonts/Magic-Delight-DEMO-BF68bfa7775a607.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.name {
+    font-family: "magic-delight", sans-serif;
+    font-size: 10rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #faff98;
+    text-shadow: 1px 1px 1px black;
+    
+}
+
+/* Position all names in the same spot */
+.name:nth-child(1),
+.name:nth-child(2),
+.name:nth-child(3),
+.name:nth-child(4) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loadMain {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('/AbhilashReddy.png') no-repeat;
+    width: 90vw;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    backface-visibility:hidden;
+}
+
+.loadMain::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/noisy-background.jpg");
+    opacity: 0.5;  /* Adjust this value for noise intensity */
+    mix-blend-mode: overlay;
+    pointer-events: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url("/back.png") no-repeat;
+}
