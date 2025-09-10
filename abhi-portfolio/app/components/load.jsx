@@ -14,44 +14,44 @@ const Load = () => {
 
         // Animate each name with different scales and timing
         tl.from(".name-1", {
-            scale: 10,
+            scale: 5,
             opacity: 0,
             duration: 0.8,
             filter: "blur(10px)",
             ease: "power4.out",
         })
-            .from(
+        .from(
                 ".name-2",
                 {
-                    scale: 10,
+                    scale: 5,
                     opacity: 0,
-                    duration: 0.8,
+                    duration: 1,
                     filter: "blur(10px)",
                     ease: "power4.out",
                 },
-                "-=0.6"
+                "-=0.7"
             ) // Start slightly before previous ends
             .from(
                 ".name-3",
                 {
                     filter: "blur(10px)",
-                    scale: 10,
+                    scale: 5,
                     opacity: 0,
-                    duration: 0.8,
+                    duration: 1,
                     ease: "power4.out",
                 },
-                "-=0.6"
+                "-=0.7"
             )
             .from(
                 ".name-4",
                 {
                     filter: "blur(10px)",
-                    scale: 10,
+                    scale: 5,
                     opacity: 0,
-                    duration: 0.8,
+                    duration: 1,
                     ease: "power4.out",
                 },
-                "-=0.6"
+                "-=0.7"
             );
         
 

@@ -1,14 +1,26 @@
 // import Image from "next/image";
-
-import Link from "next/link";
+'use client';
+// import Link from "next/link";
+import { useState, useEffect } from "react";
+import Load from "./components/load";
 
 function Home() {
-  return (
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const loader = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+    return () => clearTimeout(loader);
+  }, []);
+
+
+
+  return isLoading ? <Load /> : (
     <>
-      <h1 className="center">Hello World!</h1>
-      <Link href={"/user"}>User</Link>
+      <h1 className="text-2xl text-amber-400">Hello World!</h1>
     </>
-  )    
+  )
 }
 
 export default Home;
