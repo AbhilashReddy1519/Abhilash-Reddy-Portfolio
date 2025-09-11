@@ -1,5 +1,4 @@
 "use client";
-import { useState, useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import styles from "./load.module.css";
@@ -7,13 +6,21 @@ import styles from "./load.module.css";
 gsap.registerPlugin(useGSAP);
 
 const Load = () => {
-    const [loading, setLoading] = useState(false);
 
     useGSAP(() => {
+        gsap.from("#image", {
+            duration: 1,
+            y: 1000,
+            opacity: 1,
+            ease: "expo.out",
+        });
+
+
         const tl = gsap.timeline();
 
         // Animate each name with different scales and timing
         tl.from(".name-1", {
+            delay:0.3,
             scale: 5,
             opacity: 0,
             duration: 0.8,
@@ -89,13 +96,6 @@ const Load = () => {
                 y: 1000,
                 duration: 1,
             }, "<");
-
-        gsap.from("#image", {
-            duration: 1,
-            y: 1000,
-            opacity: 1,
-            ease: "power4.out",
-        });
     });
 
     return (
