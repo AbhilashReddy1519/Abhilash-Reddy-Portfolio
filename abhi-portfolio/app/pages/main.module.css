@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'remilia';
+    src: url('/fonts/remilia.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'surgena';
+    src: url('/fonts/surgena.ttf') format('truetype');
+    font-weight: lighter;
+}
+
+.main {
+    padding: 20% 12%;
+    padding-bottom: 0;
+}
+
+.backGround {
+    width: 120vw;
+    height: 100vh;
+    z-index: -999;
+    position:fixed;
+    top: 0;
+    left: 0;
+}
+
+.addPadding {
+    z-index: 1;
+    position: relative;
+    padding: 0 20%;
+}
+
+.about {
+    padding: 30px;
+    font-family: 'remilia';
+}
+
+.about h1 {
+    font-size: 4.2rem;
+}
+
+.about h3 {
+    font-size: 3rem;
+}
+
+.about p {
+    font-size: 20px;
+    text-align: start;
+    width: 70%;
+    font-family: "surgena";
+}

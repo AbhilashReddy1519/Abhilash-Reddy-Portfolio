@@ -1,36 +1,32 @@
 // import Image from "next/image";
-'use client';
+"use client";
 // import Link from "next/link";
 import { useState, useEffect } from "react";
 import Load from "./components/load";
-import NavBar from "./components/nav";
+import Portfolio from "./pages/main";
 
 function Home() {
-  const [showSplash, setShowSplash] = useState(false);
+    const [showSplash, setShowSplash] = useState(false);
 
-  useEffect(() => {
-    const splashShown = sessionStorage.getItem('splashShown');
-    if(!splashShown) {
-      setShowSplash(true);
-      sessionStorage.setItem('showSplash','true');
+    useEffect(() => {
+        const splashShown = sessionStorage.getItem("splashShown");
+        if (!splashShown) {
+            setShowSplash(true);
+            sessionStorage.setItem("splashShown", "true");
 
-      const timer = setTimeout(() => {
-        setShowSplash(false);
-      }, 5000);
+            const timer = setTimeout(() => {
+                setShowSplash(false);
+            }, 5000);
 
-      return () => clearTimeout(timer);
-    }
+            return () => clearTimeout(timer);
+        }
+    }, []);
 
-
-  }, []);
-
-
-
-  return showSplash ? <Load /> : (
-    <>
-      <NavBar />
-    </>
-  )
+    return showSplash ? (
+        <Load />
+    ) : (
+        <Portfolio />
+    );
 }
 
 export default Home;
