@@ -3,22 +3,32 @@
 // import Link from "next/link";
 import { useState, useEffect } from "react";
 import Load from "./components/load";
+import NavBar from "./components/nav";
 
 function Home() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [showSplash, setShowSplash] = useState(false);
 
   useEffect(() => {
-    const loader = setTimeout(() => {
-      setIsLoading(false);
-    }, 5000);
-    return () => clearTimeout(loader);
+    const splashShown = sessionStorage.getItem('splashShown');
+    if(!splashShown) {
+      setShowSplash(true);
+      sessionStorage.setItem('showSplash','true');
+
+      const timer = setTimeout(() => {
+        setShowSplash(false);
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+
+
   }, []);
 
 
 
-  return isLoading ? <Load /> : (
+  return showSplash ? <Load /> : (
     <>
-      <h1 className="text-2xl text-amber-400">Hello World!</h1>
+      <NavBar />
     </>
   )
 }
