@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
     font-family: 'remilia';
     src: url('/fonts/remilia.ttf') format('truetype');
@@ -15,6 +16,8 @@
     padding-bottom: 0;
 }
 
+=======
+>>>>>>> e4271a548bf30c7d5ca3f5489656f015d3c4f95e
 .backGround {
     width: 120vw;
     height: 100vh;
@@ -25,6 +28,7 @@
 }
 
 .addPadding {
+<<<<<<< HEAD
     z-index: 1;
     position: relative;
     padding: 0 20%;
@@ -48,4 +52,7 @@
     text-align: start;
     width: 70%;
     font-family: "surgena";
+=======
+    padding: 0 20%;
+>>>>>>> e4271a548bf30c7d5ca3f5489656f015d3c4f95e
 }
