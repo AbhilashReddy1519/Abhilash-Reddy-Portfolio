@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./nav.module.css";
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
@@ -10,35 +10,37 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const NavBar = () => {
 
     useGSAP(() => {
-
-        gsap.from("#nav", {
+        gsap.from("#nav", 
+            {
             y: -200,
             duration: 1.2,
             ease: "power4.out",
-        });
+            }
+        );
 
         ScrollTrigger.create({
-            trigger: 'body',
-            start: "top top",
+            trigger: "body",
+            //// kicks in only after scrolling 1px
+            //At page load you’re technically already at "top top", so onUpdate runs immediately and overwrites your intro animation.
+            start: "top+=1 top",
             onUpdate: (self) => {
                 // self.direction is 1 for down and -1 for up
-                if(self.direction === 1) {
+                if (self.direction === 1) {
                     gsap.to("#nav", {
                         opacity: 0,
                         duration: 0.3,
-                        display: 'none'
-                    })
+                        display: "none",
+                    });
                 } else {
                     gsap.to("#nav", {
                         opacity: 1,
                         duration: 0.3,
                         display: "",
                     });
-                    
                 }
-            }
-        })
-    })
+            },
+        });
+    });
 
     return (
         <section className={`${styles.navMenu}`}>

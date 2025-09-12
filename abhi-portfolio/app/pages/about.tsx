@@ -10,7 +10,7 @@ gsap.registerPlugin(useGSAP, SplitText);
 const About = () => {
     const aboutSectionRef = useRef<HTMLElement>(null);
     useGSAP(() => {
-        gsap.from("#About", {
+        gsap.from(aboutSectionRef.current, {
             opacity: 0,
             filter: "blur(10px)",
             duration: 1.2,
