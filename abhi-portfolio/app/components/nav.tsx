@@ -10,6 +10,13 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const NavBar = () => {
 
     useGSAP(() => {
+        gsap.set("#nav", {
+            y: 0,
+            opacity: 1,
+            duration: 2,
+            display: "",
+        })
+
         gsap.from("#nav", 
             {
             y: -200,
@@ -40,6 +47,9 @@ const NavBar = () => {
                 }
             },
         });
+        
+        
+
     });
 
     return (
@@ -55,7 +65,7 @@ const NavBar = () => {
                             <a href="#About">About</a>
                         </li>
                         <li>
-                            <a href="#Expertice">Expertise</a>
+                            <a href="#Expertise">Expertise</a>
                         </li>
                         <li>
                             <a href="#Projects">Projects</a>

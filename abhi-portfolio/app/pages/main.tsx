@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./main.module.css";
 import NavBar from "../components/nav";
 import About from "./about";
+import Expertise from "./expertise";
 
 
 const Portfolio = () => {
@@ -17,6 +18,7 @@ const Portfolio = () => {
                 ></iframe>
                 <NavBar />
                 <About />
+                <Expertise />
             </main>
         </>
     );

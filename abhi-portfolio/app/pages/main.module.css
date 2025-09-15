@@ -10,7 +10,7 @@
 }
 
 .main {
-    padding: 20% 12%;
+    padding-top: 15%;
     padding-bottom: 0;
 }
 
@@ -30,8 +30,10 @@
 }
 
 .about {
+    margin: 10% 12% 10%;
     padding: 30px;
     font-family: "remilia";
+    margin-bottom: 20vhpx;
     /* opacity: 0;
     transform: translateY(300px);
     animation: fadeInSlideUp 1s ease-out forwards; */
@@ -84,3 +86,24 @@
         transform: translateY(0);
     }
 } */
+
+.expertise {
+    padding: 30px;
+    text-align: center;
+    /* background: linear-gradient(145deg,#0b2435,black, black,#001918, #001918); */
+    background: conic-gradient(
+        /* from 0deg at 55.50000000000001% -5.6000000000000005%, */ 
+        /* 50% and -5 % transform the cone center to upward 50% and to left -5% */
+        from 0deg at 50% -5.6%,
+        #002624 64.8deg,
+        black 180.4deg,
+        rgb(0, 0, 0) 244.8deg,
+        rgb(54, 171, 255) 352.8deg
+    );
+    margin-top: 20px;
+    padding-bottom: 100vh;
+}
+
+.expertise h1 {
+    font-size: 5rem;
+}

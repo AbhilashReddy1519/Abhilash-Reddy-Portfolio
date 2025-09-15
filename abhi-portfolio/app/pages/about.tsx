@@ -13,8 +13,9 @@ const About = () => {
         gsap.from(aboutSectionRef.current, {
             opacity: 0,
             filter: "blur(10px)",
-            duration: 1.2,
+            duration: 2,
             delay: 0.2,
+            y: 200,
             ease: "power4.out",
         });
 
