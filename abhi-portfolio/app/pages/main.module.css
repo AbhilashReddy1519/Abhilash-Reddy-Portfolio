@@ -88,8 +88,7 @@
 } */
 
 .expertise {
-    padding: 30px;
-    text-align: center;
+    padding: 0 13%;
     /* background: linear-gradient(145deg,#0b2435,black, black,#001918, #001918); */
     background: conic-gradient(
         /* from 0deg at 55.50000000000001% -5.6000000000000005%, */ 
@@ -101,9 +100,31 @@
         rgb(54, 171, 255) 352.8deg
     );
     margin-top: 20px;
-    padding-bottom: 100vh;
+    padding-bottom: 30%;
+    height: fit-content;
+
 }
 
 .expertise h1 {
     font-size: 5rem;
+    text-align: center;
+}
+
+.expertContain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.expertContain div {
+    margin-top: 2rem;
+    border: 3px solid white;
+    padding: 30px;
+}
+
+.expertContain div h2 {
+    font-size: 26px;
+}
+
+.expertContain div h3 {
+    font-size: 16px;
 }
