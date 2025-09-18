@@ -100,9 +100,10 @@
         rgb(54, 171, 255) 352.8deg
     );
     margin-top: 20px;
-    padding-bottom: 30%;
+    padding-top: 3rem;
+    padding-bottom: 25%;
     height: fit-content;
-
+    z-index: -10;
 }
 
 .expertise h1 {
@@ -113,18 +114,46 @@
 .expertContain {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    z-index: 1;
 }
 
-.expertContain div {
+.expertContain > div {
     margin-top: 2rem;
     border: 3px solid white;
     padding: 30px;
 }
 
-.expertContain div h2 {
+.expertContain div  h2 {
     font-size: 26px;
+    font-family: 'surgena';
 }
 
 .expertContain div h3 {
     font-size: 16px;
+}
+
+.expertContain > div > div {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.expertContain > div > div > img {
+    width: 3rem;
+    display: inline;
+}
+
+.expertContain > img {
+    position: absolute;
+    top: 123%;
+    left: 45%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    z-index: -1; 
+    background-color: black;
+    padding: 30px;
 }
