@@ -88,12 +88,12 @@
 } */
 
 .expertise {
-    padding: 0 13%;
+    padding: 0 10%;
     /* background: linear-gradient(145deg,#0b2435,black, black,#001918, #001918); */
     background: conic-gradient(
-        /* from 0deg at 55.50000000000001% -5.6000000000000005%, */ 
-        /* 50% and -5 % transform the cone center to upward 50% and to left -5% */
-        from 0deg at 50% -5.6%,
+        /* from 0deg at 55.50000000000001% -5.6000000000000005%, */
+            /* 50% and -5 % transform the cone center to upward 50% and to left -5% */
+            from 0deg at 50% -5.6%,
         #002624 64.8deg,
         black 180.4deg,
         rgb(0, 0, 0) 244.8deg,
@@ -116,17 +116,16 @@
     grid-template-columns: repeat(3, 1fr);
     position: relative;
     z-index: 1;
+    margin-bottom: 10%;
 }
 
 .expertContain > div {
     margin-top: 2rem;
-    border: 3px solid white;
-    padding: 30px;
 }
 
-.expertContain div  h2 {
+.expertContain div h2 {
     font-size: 26px;
-    font-family: 'surgena';
+    font-family: "surgena";
 }
 
 .expertContain div h3 {
@@ -153,7 +152,235 @@
     width: 50%;
     transform: translate(-50%, -50%);
     height: 70%;
-    z-index: -1; 
+    z-index: -1;
     background-color: black;
     padding: 30px;
+}
+
+
+.expertDiv1 > div > h2 > span {
+    position: relative;
+}
+
+.expertDiv1 > div > h2 > span::after {
+    transition: all 0.1s ease-in-out;
+    content: "";
+    position: absolute;
+    bottom: 13.5%;
+    z-index: -1;
+    height: 0.3em;
+    width: 104%;
+    left: -1%;
+    background: linear-gradient(
+        65deg,
+        #df058d 0%,
+        #df058d 100%,
+        rgba(255, 209, 0, 0) 100%
+    );
+}
+
+.expertDiv2 > div > h2 > span {
+    position: relative;
+}
+
+.expertDiv2 > div > h2 > span::after {
+    transition: all 0.1s ease-in-out;
+    content: "";
+    position: absolute;
+    bottom: 13.5%;
+    z-index: -1;
+    height: 0.3em;
+    width: 104%;
+    left: -1%;
+    background: linear-gradient(
+        65deg,
+        #2c49d8 0%,
+        #2c49d8 100%,
+        rgba(255, 209, 0, 0) 100%
+    );
+}
+
+.expertDiv3 > div > h2 > span {
+    position: relative;
+}
+
+.expertDiv3 > div > h2 > span::after {
+    transition: all 0.1s ease-in-out;
+    content: "";
+    position: absolute;
+    bottom: 13.5%;
+    z-index: -1;
+    height: 0.3em;
+    width: 104%;
+    left: -1%;
+    background: linear-gradient(
+        65deg,
+        #ff6b2b 0%,
+        #ff6b2b 100%,
+        rgba(255, 209, 0, 0) 100%
+    );
+}
+
+.expertDiv1 {
+    border-width: 3px 1.5px 3px 3px;
+    padding: 20px 30px;
+    border-style: solid;
+    border-color: #a3a3a3;
+}
+
+.expertDiv2 {
+    border-width: 3px 1.5px;
+    padding: 20px 30px;
+    border-style: solid;
+    border-color: #a3a3a3;
+}
+
+.expertDiv3 {
+    border-width: 3px 3px 3px 1.5px;
+    padding: 20px 30px;
+    border-style: solid;
+    border-color: #a3a3a3;
+}
+
+
+.expertDiv1 > div > h3 > p::before {
+    content: "<h3>";
+    margin-bottom: 5px;
+}
+
+.expertDiv1 > div > h3 > p::after {
+    content: "<h3>";
+    margin-top: 5px;
+}
+
+.expertDiv1 > div > h3 > p::before,
+.expertDiv1 > div > h3 > p::after {
+    opacity: 0.3;
+    color: white;
+    display: block;
+    margin-left: -35px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.expertDiv1 > div {
+    position: relative;
+}
+
+.expertDiv1 > div > h3 {
+    padding-left: 35px;
+}
+
+.expertDiv1 > div > h3::after {
+    opacity: 0.3;
+    content: "";
+    width: 0;
+    height: 65%;
+    position: absolute;
+    background-color: white;
+    border: 0.1px solid white;
+    bottom: 17%;
+    left: 17px;
+}
+
+.expertDiv1 > div > h3 > p {
+    color: #fff;
+    font-family: "Roboto Mono", Sans-serif;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+.expertDiv2 > div > h3 > p::before {
+    content: "<h3>";
+    margin-bottom: 5px;
+}
+
+.expertDiv2 > div > h3 > p::after {
+    content: "<h3>";
+    margin-top: 5px;
+}
+
+.expertDiv2 > div > h3 > p::before,
+.expertDiv2 > div > h3 > p::after {
+    opacity: 0.3;
+    color: white;
+    display: block;
+    margin-left: -35px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.expertDiv2 > div {
+    position: relative;
+}
+
+.expertDiv2 > div > h3 {
+    padding-left: 35px;
+}
+
+.expertDiv2 > div > h3::after {
+    opacity: 0.3;
+    content: "";
+    width: 0;
+    height: 65%;
+    position: absolute;
+    background-color: white;
+    border: 0.1px solid white;
+    bottom: 17%;
+    left: 17px;
+}
+
+.expertDiv2 > div > h3 > p {
+    color: #fff;
+    font-family: "Roboto Mono", Sans-serif;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+
+.expertDiv3 > div > h3 > p::before {
+    content: "<h3>";
+    margin-bottom: 5px;
+}
+
+.expertDiv3 > div > h3 > p::after {
+    content: "<h3>";
+    margin-top: 5px;
+}
+
+.expertDiv3 > div > h3 > p::before,
+.expertDiv3 > div > h3 > p::after {
+    opacity: 0.3;
+    color: white;
+    display: block;
+    margin-left: -35px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.expertDiv3 > div {
+    position: relative;
+}
+
+.expertDiv3 > div > h3 {
+    padding-left: 35px;
+}
+
+.expertDiv3 > div > h3::after {
+    opacity: 0.3;
+    content: "";
+    width: 0;
+    height: 65%;
+    position: absolute;
+    background-color: white;
+    border: 0.1px solid white;
+    bottom: 17%;
+    left: 17px;
+}
+
+.expertDiv3 > div > h3 > p {
+    color: #fff;
+    font-family: "Roboto Mono", Sans-serif;
+    font-weight: 400;
+    line-height: 1.4em;
 }
