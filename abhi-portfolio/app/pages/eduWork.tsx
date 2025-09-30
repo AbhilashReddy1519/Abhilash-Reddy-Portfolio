@@ -43,27 +43,62 @@ const Education = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="">
+                    <div className={styles.expJustify}>
                         <div>
-                            <div id="logo">
+                            <div id={styles.logo}>
                                 <Image
                                     src={"/cipherschools.png"}
                                     alt={"cipherschools"}
                                     height={"20"}
                                     width={"20"}
                                 />
+                                <p>Cipher Schools</p>
                             </div>
-                            <div>
+                            <div className={styles.workname}>
                                 <p>Full Stack Web Developer</p>
                             </div>
-                            <div>
-                                <p aria-label="timefromtofrom"></p>
+                            <div className="text-m">
+                                <p id={styles.time} aria-label="timefromtofrom">
+                                    Jun - Jul '25
+                                </p>
                             </div>
-                            <div aria-label="description"></div>
+                            <div aria-label="description">
+                                <p>
+                                    Built and deployed responsive web features
+                                    using MongoDB, Express.js, React, and
+                                    Node.js; designed efficient database
+                                    schemas, integrated REST APIs, and
+                                    implemented authentication. Collaborated in
+                                    agile sprints with Git/GitHub, improving
+                                    scalability and end-to-end application
+                                    performance.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className={`${styles.educationDone}`}></div>
+                <div className={`${styles.educationDone}`}>
+                    <div className={styles.info}>
+                        <p>
+                            And here&apos;s what I<br /> studied →
+                        </p>
+                    </div>
+                    <div className={styles.edu}>
+                        <div className={styles.educationPlace}>
+                            <h1>Lovely Professional University, Punjab</h1>
+                            <p>
+                                Bachelor of Technology (B.Tech.) in Computer
+                                Science and Engineering
+                            </p>
+                            <p>2023 - 2027</p>
+                        </div>
+                        <div className={styles.educationPlace}>
+                            <h1>Sri Chaitanya Jr college, Andhra Pradesh</h1>
+                            <p>Intermediate Certificate (10+2) – MPC Stream</p>
+                            <p>2021 - 2023</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </>
     );

@@ -14,6 +14,21 @@
     src: url("/fonts/NanumPenScript.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: 'General Sans Medium';
+    src: url("/fonts/GeneralSans-Medium.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'General Sans Extralight';
+    src: url("/fonts/GeneralSans-Extralight.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'General Sans Regular';
+    src: url("/fonts/GeneralSans-Regular.otf") format('opentype');
+}
+
 .main {
     padding-top: 15%;
     padding-bottom: 0;
@@ -399,6 +414,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5%;
+    padding-bottom: 10%;
 }
 
 .exp {
@@ -407,11 +423,17 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 18px;
+    position: sticky;
+    top: 150px;
+    z-index: 2;
+    overflow: visible;
+    height: min-content;
 }
 
 .exp > div:nth-child(2) {
     font-size: 1.5rem;
     color: rgba(0, 255, 187, 1);
+    font-family: "General Sans Medium";
 }
 
 .exp > div:nth-child(1) {
@@ -478,4 +500,70 @@
 
 .exp a:hover span:last-child {
     transform: translateY(0%);
+}
+
+.expJustify {
+    padding: 30px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.expJustify > div  {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    gap: 10px;
+}
+
+#logo {
+    font-size: 1.2rem;
+    font-family: 'General Sans Regular';
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#logo > img {
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+#time {
+    font-family: 'General Sans Regular';
+}
+
+.workname {
+    font-family: 'General Sans Medium';
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.expJustify  div > div:last-child {
+    color: gray;
+    font-size: 1.1rem;
+    font-family: 'General Sans Extralight';
+}
+
+.educationDone {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+}
+
+.info {
+    color: rgb(255, 148, 250);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 18px;
+    position: sticky;
+    top: 150px;
+    z-index: 2;
+    overflow: visible;
+    height: min-content;
+    font-size: 2rem;
 }
