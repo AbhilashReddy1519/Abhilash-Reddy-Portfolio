@@ -9,6 +9,11 @@
     font-weight: lighter;
 }
 
+@font-face {
+    font-family: "nanum pen script";
+    src: url("/fonts/NanumPenScript.ttf") format("truetype");
+}
+
 .main {
     padding-top: 15%;
     padding-bottom: 0;
@@ -96,12 +101,12 @@
             from 0deg at 50% -5.6%,
         #002624 64.8deg,
         black 180.4deg,
-        rgb(0, 0, 0) 244.8deg,
+        #010a12 244.8deg,
         rgb(54, 171, 255) 352.8deg
     );
     margin-top: 20px;
     padding-top: 3rem;
-    padding-bottom: 25%;
+    padding-bottom: 15%;
     height: fit-content;
     z-index: -10;
 }
@@ -156,7 +161,6 @@
     background-color: black;
     padding: 30px;
 }
-
 
 .expertDiv1 > div > h2 > span {
     position: relative;
@@ -241,7 +245,6 @@
     border-style: solid;
     border-color: #a3a3a3;
 }
-
 
 .expertDiv1 > div > h3 > p::before {
     content: "<h3>";
@@ -337,7 +340,6 @@
     line-height: 1.4em;
 }
 
-
 .expertDiv3 > div > h3 > p::before {
     content: "<h3>";
     margin-bottom: 5px;
@@ -383,4 +385,97 @@
     font-family: "Roboto Mono", Sans-serif;
     font-weight: 400;
     line-height: 1.4em;
+}
+
+.education {
+    background-color: #000; /* black base */
+    background-image: radial-gradient(#333 1px, transparent 1px);
+    background-size: 40px 40px; /* spacing of dots */
+    /* height: 300vh; */
+    padding: 12%;
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+}
+
+.exp {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 18px;
+}
+
+.exp > div:nth-child(2) {
+    font-size: 1.5rem;
+    color: rgba(0, 255, 187, 1);
+}
+
+.exp > div:nth-child(1) {
+    color: yellow;
+    font-family: "nanum pen script";
+    font-size: 1.5rem;
+    transform: rotate(-3deg) translateY(10px);
+    /* z-index: 1px; */
+    margin-top: 10px;
+}
+
+.exp > a {
+    width: fit-content;
+    background-color: white;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.exp > a:hover {
+    box-shadow: 0 5px 10px white, -5px 0 15px red,
+        /* left side shadow */ 5px 0 15px orange; /* right side shadow */
+    transform: rotate(-3deg) scale(1.05);
+}
+
+.exp a > div {
+    position: relative;
+    width: 20px; /* same as your icon width */
+    height: 20px; /* same as your icon height */
+    overflow: hidden;
+}
+
+/* both icons stacked in same place */
+.exp a span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* old icon visible initially */
+.exp a span:first-child {
+    transform: translateY(0%);
+}
+
+/* new icon hidden above */
+.exp a span:last-child {
+    transform: translateY(-120%);
+}
+
+/* hover animation: old goes down, new comes down */
+.exp a:hover span:first-child {
+    transform: translateY(120%);
+}
+
+.exp a:hover span:last-child {
+    transform: translateY(0%);
 }

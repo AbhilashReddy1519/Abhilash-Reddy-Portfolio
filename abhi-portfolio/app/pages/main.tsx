@@ -4,6 +4,7 @@ import styles from "./main.module.css";
 import NavBar from "../components/nav";
 import About from "./about";
 import Expertise from "./expertise";
+import Education from "./eduWork";
 
 
 const Portfolio = () => {
@@ -19,6 +20,7 @@ const Portfolio = () => {
                 <NavBar />
                 <About />
                 <Expertise />
+                <Education />
             </main>
         </>
     );

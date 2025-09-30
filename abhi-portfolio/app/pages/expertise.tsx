@@ -68,10 +68,11 @@ const Expertise = () => {
                         <div>
                             <h3>
                                 <p>
-                                    Pursuing IBM Data Engineering Professional
-                                    Certificate, experienced with SQL, ETL
-                                    pipelines, AWS, and designing cloud-native,
-                                    distributed architectures.
+                                    Pursuing IBM Data Engineering coursework.
+                                    Building skills in SQL, ETL
+                                    workflows, and AWS cloud services while
+                                    learning to design scalable data pipelines
+                                    and cloud-native architectures.
                                 </p>
                             </h3>
                         </div>
