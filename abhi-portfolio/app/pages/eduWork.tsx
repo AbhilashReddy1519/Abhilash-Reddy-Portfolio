@@ -59,7 +59,7 @@ const Education = () => {
                             </div>
                             <div className="text-m">
                                 <p id={styles.time} aria-label="timefromtofrom">
-                                    Jun - Jul '25
+                                    Jun - Jul &#39;25
                                 </p>
                             </div>
                             <div aria-label="description">
