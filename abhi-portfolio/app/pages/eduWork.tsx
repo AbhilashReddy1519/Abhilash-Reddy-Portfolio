@@ -80,7 +80,7 @@ const Education = () => {
                 <div className={`${styles.educationDone}`}>
                     <div className={styles.info}>
                         <p>
-                            And here&apos;s what I<br /> studied →
+                            And here &apos;s what I<br /> studied →
                         </p>
                     </div>
                     <div className={styles.edu}>
