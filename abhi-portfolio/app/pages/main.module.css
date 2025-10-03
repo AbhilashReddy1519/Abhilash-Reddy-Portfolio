@@ -408,13 +408,14 @@
     background-size: 40px 40px; /* spacing of dots */
     /* height: 300vh; */
     padding: 12%;
+    padding-bottom: 10%;
 }
 
 .experience {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
 }
 
 .exp {
@@ -566,4 +567,68 @@
     overflow: visible;
     height: min-content;
     font-size: 2rem;
+    height: fit-content;
+    padding-bottom: 60px;
+}
+
+.edu {
+    padding: 30px;
+}
+
+.educationPlace > h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.2;  
+}
+
+.educationPlace > p {
+    font-size: medium;
+    color: gray;
+}
+
+.contact {
+    height: 100vh;
+    background-color: white;
+    padding: 0 4%;
+}
+
+.contactMain {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactMain > a {
+    text-align: center;
+    width: 25%;
+    background-color: #000;
+    padding: 10px 40px;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    font-family: 'General Sans Extralight';
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.copy {
+    background-color: white;
+    height: 15vh;
+    padding: 0 4%;
+}
+
+.copyright {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'General Sans Extralight';
+    padding-bottom: 20px;
 }

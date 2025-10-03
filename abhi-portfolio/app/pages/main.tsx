@@ -5,6 +5,8 @@ import NavBar from "../components/nav";
 import About from "./about";
 import Expertise from "./expertise";
 import Education from "./eduWork";
+import Contact from "./contact";
+import CopyRight from "./copyright";
 
 
 const Portfolio = () => {
@@ -21,6 +23,8 @@ const Portfolio = () => {
                 <About />
                 <Expertise />
                 <Education />
+                <Contact />
+                <CopyRight />
             </main>
         </>
     );

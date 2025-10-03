@@ -90,12 +90,12 @@ const Education = () => {
                                 Bachelor of Technology (B.Tech.) in Computer
                                 Science and Engineering
                             </p>
-                            <p>2023 - 2027</p>
+                            <p className="pb-10">2023 - 2027</p>
                         </div>
                         <div className={styles.educationPlace}>
                             <h1>Sri Chaitanya Jr college, Andhra Pradesh</h1>
                             <p>Intermediate Certificate (10+2) – MPC Stream</p>
-                            <p>2021 - 2023</p>
+                            <p className="pb-10">2021 - 2023</p>
                         </div>
                     </div>
                 </div>
