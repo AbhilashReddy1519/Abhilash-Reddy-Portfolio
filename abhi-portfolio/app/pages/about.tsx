@@ -4,6 +4,7 @@ import styles from "./main.module.css";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
+import Ballpit from "./Ballpit";
 
 gsap.registerPlugin(useGSAP, SplitText);
 
@@ -63,24 +64,48 @@ const About = () => {
     });
 
     return (
-        <>
-            <section id="About" className={styles.about} ref={aboutSectionRef}>
-                <h1>Hello, I’m Abhilash 👋</h1>
-                <h3>
-                    I build products that don’t confuse users—or need a rescue
-                    call ☎️.
-                </h3>
-                <p>
-                    Developer by trade, problem-solver by instinct. I focus on
-                    creating digital products that feel effortless—where the
-                    tech fades and the experience shines. Lately, I’m learning
-                    to obsess less over code perfection, and more over human
-                    impact. <br />
-                    Career motto = Fewer buzzwords, more backbone.
-                </p>
-            </section>
-        </>
-    );
+		<>
+			<section className={styles.backGround}>
+				<div
+					className={styles.ballpit}
+					style={{
+						// position: "relative",
+						overflow: "hidden",
+						minHeight: "500px",
+						maxHeight: "140vh",
+						width: "100%",
+						// height: "100%",
+						zIndex: "-999",
+					}}>
+					<Ballpit
+						count={200}
+						gravity={0.01}
+						friction={0.9975}
+						wallBounce={0.95}
+						followCursor={true}
+						colors={["#fff", "#130F8C", "#130F8C", "#CA0607"]}
+					/>
+				</div>
+				<section id="About" className={styles.about} ref={aboutSectionRef}>
+					<div ref={aboutSectionRef} className={styles.blurbg}>
+						<h1>Hello, I’m Abhilash 👋</h1>
+						<h3>
+							I build products that don’t confuse users—or need a
+							rescue call ☎️.
+						</h3>
+						<p>
+							Developer by trade, problem-solver by instinct. I
+							focus on creating digital products that feel
+							effortless—where the tech fades and the experience
+							shines. Lately, I’m learning to obsess less over
+							code perfection, and more over human impact. <br />
+							Career motto = Fewer buzzwords, more backbone.
+						</p>
+					</div>
+				</section>
+			</section>
+		</>
+	);
 };
 
 export default About;

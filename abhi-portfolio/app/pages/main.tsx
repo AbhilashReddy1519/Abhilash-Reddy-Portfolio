@@ -11,23 +11,26 @@ import CopyRight from "./copyright";
 
 const Portfolio = () => {
     return (
-        <>
-            <main className={styles.main}>
-                <iframe
+		<>
+			<main className={styles.main}>
+				{/* <iframe
                     title="BackGround"
                     className={styles.backGround}
                     src="https://my.spline.design/claritystream-nIOPPIyV1H1J3mOs0MYDJE5K/"
                     // frameborder="0"
-                ></iframe>
-                <NavBar />
-                <About />
-                <Expertise />
-                <Education />
-                <Contact />
-                <CopyRight />
-            </main>
-        </>
-    );
+                ></iframe> */}
+				<NavBar />
+				<About />
+				<Expertise />
+				<Education />
+				<Contact />
+				<CopyRight />
+				{/* //Component inspired by Kevin Levron:
+				//https://x.com/soju22/status/1858925191671271801 import Ballpit
+				from './Ballpit;' */}
+			</main>
+		</>
+	);
 };
 
 export default Portfolio;

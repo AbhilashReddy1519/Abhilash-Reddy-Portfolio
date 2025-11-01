@@ -30,17 +30,18 @@
 }
 
 .main {
-    padding-top: 15%;
+    /* padding-top: 15%; */
     padding-bottom: 0;
 }
 
 .backGround {
-    width: 120vw;
-    height: 100vh;
-    z-index: -999;
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
+}
+
+.ballpit {
+    position: absolute;
+    height: 140vh;
+    /* top: 0; */
 }
 
 .addPadding {
@@ -49,14 +50,24 @@
     padding: 0 20%;
 }
 
+.blurbg {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 10px;
+}
+
 .about {
-    margin: 10% 12% 10%;
+    margin: 0% 12%;
     padding: 30px;
+    padding-top: 40vh;
     font-family: "remilia";
-    margin-bottom: 20vhpx;
+    /* margin-bottom: 20vhpx; */
+    z-index: 5;
     /* opacity: 0;
     transform: translateY(300px);
     animation: fadeInSlideUp 1s ease-out forwards; */
+    /* backdrop-filter: blur(10px); */
 }
 
 .about h1 {
@@ -64,6 +75,10 @@
     /* opacity: 0; */
     /* animation: textFadeInUp 0.8s ease-out forwards;
     animation-delay: 0.3s; */
+    /* display: block;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 10px; */
 }
 
 .about h3 {
@@ -71,6 +86,11 @@
     /* opacity: 0; */
     /* animation: textFadeInUp 0.8s ease-out forwards;
     animation-delay: 0.6s; */
+    /* display: block;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 10px; */
+
 }
 
 .about p {
@@ -78,6 +98,10 @@
     text-align: start;
     width: 70%;
     font-family: "surgena";
+    /* -webkit-backdrop-filter: blur(10px);
+    display: block;
+    backdrop-filter: blur(10px);
+    border-radius: 10px; */
     /* opacity: 0;
     animation: textFadeInUp 0.8s ease-out forwards;
     animation-delay: 0.9s; */
