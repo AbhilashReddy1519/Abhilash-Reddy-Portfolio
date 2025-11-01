@@ -9,7 +9,7 @@ import Ballpit from "./Ballpit";
 gsap.registerPlugin(useGSAP, SplitText);
 
 const About = () => {
-    const aboutSectionRef = useRef<HTMLElement>(null);
+    const aboutSectionRef = useRef<HTMLDivElement>(null);
     useGSAP(() => {
         gsap.from(aboutSectionRef.current, {
             opacity: 0,
@@ -86,8 +86,8 @@ const About = () => {
 						colors={["#fff", "#130F8C", "#130F8C", "#CA0607"]}
 					/>
 				</div>
-				<section id="About" className={styles.about} ref={aboutSectionRef}>
-					<div ref={aboutSectionRef} className={styles.blurbg}>
+				<section id="About" className={styles.about}>
+					<div id="aboutDiv" ref={aboutSectionRef} className={styles.blurbg}>
 						<h1>Hello, I’m Abhilash 👋</h1>
 						<h3>
 							I build products that don’t confuse users—or need a
