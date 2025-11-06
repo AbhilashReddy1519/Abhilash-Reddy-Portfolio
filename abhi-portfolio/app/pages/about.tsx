@@ -66,19 +66,21 @@ const About = () => {
     return (
 		<>
 			<section className={styles.backGround}>
-				<div
-					className={`${styles.ballpit}`}>
+				<div className={`${styles.ballpit}`}>
 					<Ballpit
 						count={200}
 						gravity={0.01}
 						friction={0.9975}
 						wallBounce={0.95}
 						followCursor={true}
-						colors={["#130F8C", "#130F8C", "#CA0607","pink"]}
+						colors={["#130F8C", "#130F8C", "#CA0607", "#ce68e1"]}
 					/>
 				</div>
 				<section id="About" className={styles.about}>
-					<div id="aboutDiv" ref={aboutSectionRef} className={styles.blurbg}>
+					<div
+						id="aboutDiv"
+						ref={aboutSectionRef}
+						className={styles.blurbg}>
 						<h1>Hello, I’m Abhilash 👋</h1>
 						<h3>
 							I build products that don’t confuse users—or need a
