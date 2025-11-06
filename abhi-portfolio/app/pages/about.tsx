@@ -74,7 +74,7 @@ const About = () => {
 						friction={0.9975}
 						wallBounce={0.95}
 						followCursor={true}
-						colors={["#fff", "#130F8C", "#130F8C", "#CA0607"]}
+						colors={["#130F8C", "#130F8C", "#CA0607","pink"]}
 					/>
 				</div>
 				<section id="About" className={styles.about}>
