@@ -1,5 +1,5 @@
 @media (max-width: 790px) {
     .ballpit{
-        display: none;
+        display: none !important;
     }
 }
