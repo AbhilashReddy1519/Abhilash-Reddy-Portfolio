@@ -40,9 +40,12 @@
 
 .ballpit {
     position: absolute;
-    /* height: 140vh; */
-    /* top: 0; */
-    /* height: ; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 99.98%;
 }
 
 .addPadding {
