@@ -76,6 +76,7 @@ const About = () => {
 						bottom: 0,
 						// width: "100%",
 						zIndex: "-1",
+                        touchAction:"none",
                         pointerEvents:"none",
 					}}>
 					<Ballpit
