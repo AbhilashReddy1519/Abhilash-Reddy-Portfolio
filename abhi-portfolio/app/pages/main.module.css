@@ -46,6 +46,9 @@
     bottom: 0;
     height: 100%;
     width: 99.98%;
+    pointer-events: none;
+    touch-action: none;
+    z-index: -1;
 }
 
 .addPadding {

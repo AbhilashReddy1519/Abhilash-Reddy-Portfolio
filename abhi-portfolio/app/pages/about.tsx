@@ -67,18 +67,7 @@ const About = () => {
 		<>
 			<section className={styles.backGround}>
 				<div
-					className={`${styles.ballpit}`}
-					style={{
-						position: "absolute",
-						top: 0,
-						left: 0,
-						right: 0,
-						bottom: 0,
-						// width: "100%",
-						zIndex: "-1",
-                        touchAction:"none",
-                        pointerEvents:"none",
-					}}>
+					className={`${styles.ballpit}`}>
 					<Ballpit
 						count={200}
 						gravity={0.01}
