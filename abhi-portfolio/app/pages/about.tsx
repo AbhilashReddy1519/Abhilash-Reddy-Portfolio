@@ -68,7 +68,7 @@ const About = () => {
 		<>
 			<section className={styles.backGround}>
 				<div
-					className={`${styles.ballpit} ${styles1.ballpit}`}
+					className={`${styles1.ballpit}`}
 					style={{
 						position: "absolute",
 						top: 0,
