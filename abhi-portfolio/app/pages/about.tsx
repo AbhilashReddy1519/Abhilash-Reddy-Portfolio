@@ -1,7 +1,6 @@
 'use client';
 import React, { useRef } from "react";
 import styles from "./main.module.css";
-import styles1 from "./responsive.module.css"
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
@@ -68,7 +67,7 @@ const About = () => {
 		<>
 			<section className={styles.backGround}>
 				<div
-					className={`${styles1.ballpit}`}
+					className={`${styles.ballpit}`}
 					style={{
 						position: "absolute",
 						top: 0,

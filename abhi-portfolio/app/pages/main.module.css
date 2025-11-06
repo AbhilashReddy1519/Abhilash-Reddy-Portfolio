@@ -660,3 +660,10 @@
     font-family: 'General Sans Extralight';
     padding-bottom: 20px;
 }
+
+
+@media (max-width: 790px) {
+    .ballpit{
+        display: none !important;
+    }
+}
