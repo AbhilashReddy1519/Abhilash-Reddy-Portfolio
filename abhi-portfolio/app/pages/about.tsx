@@ -69,13 +69,14 @@ const About = () => {
 				<div
 					className={styles.ballpit}
 					style={{
-						// position: "relative",
-						// overflow: "hidden",
-						minHeight: "500px",
-						maxHeight: "140vh",
+						position: "absolute",
+						top: 0,
+						left: 0,
+						right: 0,
+						bottom: 0,
 						width: "100%",
-						// height: "100%",
-						zIndex: "0",
+						zIndex: "-1",
+                        pointerEvents:"none",
 					}}>
 					<Ballpit
 						count={200}

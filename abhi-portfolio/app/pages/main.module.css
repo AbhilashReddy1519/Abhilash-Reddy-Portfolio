@@ -40,8 +40,9 @@
 
 .ballpit {
     position: absolute;
-    height: 140vh;
+    /* height: 140vh; */
     /* top: 0; */
+    /* height: ; */
 }
 
 .addPadding {
@@ -143,7 +144,7 @@
         #010a12 244.8deg,
         rgb(54, 171, 255) 352.8deg
     );
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding-top: 3rem;
     padding-bottom: 15%;
     height: fit-content;
