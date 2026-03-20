@@ -7,6 +7,7 @@ import Expertise from "./expertise";
 import Education from "./eduWork";
 import Contact from "./contact";
 import CopyRight from "./copyright";
+import Project from "./projects";
 
 
 const Portfolio = () => {
@@ -22,6 +23,7 @@ const Portfolio = () => {
 				<NavBar />
 				<About />
 				<Expertise />
+				<Project />
 				<Education />
 				<Contact />
 				<CopyRight />
